@@ -7,7 +7,7 @@ const vi = randomBytes(16); // vi é o vetor de inicialização
 
 const cifra = createCipheriv('aes-256-cbc', chave, vi);
 
-const msgCifrada = cifra.update(msg, 'utf-8', 'hex') + cifra.final('hex');
+const msgCifrada = cifra.update(msg, 'utf-8', 'hex') + cifra.final('hex'); 
 
 console.log('Mensagem cifrada:', msgCifrada);
 
